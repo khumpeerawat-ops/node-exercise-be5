@@ -2,8 +2,8 @@ import * as pg from "pg";
 const { Pool } = pg.default;
 
 const pool = new Pool({
-	connectionString:
-		"postgresql://<username>:<password>@<hostname>:5432/<database_name>",
+  connectionString:
+    "postgresql://postgres:panuwat27@localhost:5432/my-blog-app",
 });
 
 export { pool };
