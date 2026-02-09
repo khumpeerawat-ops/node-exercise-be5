@@ -16,7 +16,7 @@ app.get("/movies/:movieId", async (req, res) => {
     );
 
     return res.json({
-      data: result.rows,
+      data: result.rows[0],
     });
   } catch (e) {
     return res.json({
